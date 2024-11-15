@@ -2,14 +2,15 @@
     <fieldset>
         <legend>Datos personales</legend>
         <label for="nombre">Nombre y apellidos: </label>
-        <input id="nombre" type="text" minlength="3"><br>
+        <input id="nombre" type="text" minlength="3" required placeholder="Introduzca su nombre" name="nombre"><br>
 
         <label for="sexo">Sexo: </label>
-        <select id="sexo">
+        <select id="sexo" name="sexo" required>
             <!--Etiqueta option-->
-            <option value="value1">Hombre</option> 
-            <option value="value2" selected>Mujer</option>
-            <option value="value2" selected>Optimus Prime</option>
+            <option value="" disabled selected>Seleccione sexo</option> 
+            <option value="H">Hombre</option> 
+            <option value="M">Mujer</option>
+            <option value="0">Optimus Prime</option>
         </select><br><br>
 
         <label>Edad: </label>
@@ -49,5 +50,7 @@
         <label for="mensaje">Escribe tu mensaje: </label>
         <textarea size="" rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
     </fieldset>  
+    <label  for="cumple">Fecha nacimiento</label>
+    <input type="date"> id="cumple" name="cumple"
     <input type="submit" value="Enviar">
 </form>
