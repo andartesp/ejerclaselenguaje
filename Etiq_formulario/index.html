@@ -7,8 +7,8 @@
         <label for="sexo">Sexo: </label>
         <select id="sexo" name="sexo" required>
             <!--Etiqueta option-->
-            <option value="" disabled selected>Seleccione sexo</option> 
-            <option value="H">Hombre</option> 
+            <option value="" disabled selected>Seleccione sexo</option>
+            <option value="H">Hombre</option>
             <option value="M">Mujer</option>
             <option value="0">Optimus Prime</option>
         </select><br><br>
@@ -19,25 +19,53 @@
         <input type="checkbox" value="60-79"> 60-79<br><br>
 
         <label for="email">Email: </label>
-        <input id="email" type="email"><br><br>
+        <input id="email" type="email">
+        <label id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="correoejemplo@ejemplo.com"
+            pattern=".+@g\.educaand\.es"
+            title="Itroduce tu correo de @g.educaand.es">
+        </label><br><br>
+        
+        
+        <label for="telefono">Número de teléfono:</label>        
+        <input required type="tel" id="telefono" name="telefono" placeholder="+34 123456789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
 
+        <label for="direccion">Direccion</label>
+        <textarea maxlength="40" id="direccion"></textarea><br><br>
+
+        <label for="pass">Password</label>
+        <input type="password"
+        id="password"
+        name="password"
+        placeholder="Introduce la contraseña"
+        minlength="8"
+        maxlength="15"
+        required
+
+
+
+
+        /> <br><br>
         <label for="estudios">Estudios: </label>
         <select id="estudios">
-           <optgroup label="Estudios Universitarios">
-              <option>Doctorado</option>
-              <option>Máster</option>
-              <option>Grado</option>
-           </optgroup>
-           <optgroup label="Ciclo Formativo">
-              <option>Grado Superior</option>
-              <option>Grado Medio</option>
-           </optgroup>
+            <optgroup label="Estudios Universitarios">
+                <option>Doctorado</option>
+                <option>Máster</option>
+                <option>Grado</option>
+            </optgroup>
+            <optgroup label="Ciclo Formativo">
+                <option>Grado Superior</option>
+                <option>Grado Medio</option>
+            </optgroup>
         </select><br><br>
-        </fieldset>
-        <fieldset>
-            <legend>Preferencias</legend>
-      <label for="navegador">Elige tu navegador favorito: </label>
-      <input id="navegador" list="browsers">
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias</legend>
+        <label for="navegador">Elige tu navegador favorito: </label>
+        <input id="navegador" list="browsers">
         <datalist id="browsers">
             <option value="Chrome">
             <option value="Firefox">
@@ -49,8 +77,8 @@
 
         <label for="mensaje">Escribe tu mensaje: </label>
         <textarea size="" rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
-    </fieldset>  
-    <label  for="cumple">Fecha nacimiento</label>
+    </fieldset>
+    <label for="cumple">Fecha nacimiento</label>
     <input type="date"> id="cumple" name="cumple"
     <input type="submit" value="Enviar">
 </form>
