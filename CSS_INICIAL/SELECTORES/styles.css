@@ -1,0 +1,30 @@
+*{
+color:blueviolet
+}
+
+h1{
+    color: darkslateblue;
+    font-style:italic;
+    text-align: center;
+
+}
+
+.borde_redondo {
+    border: solid 2px gray;
+    border-radius:  15px;
+
+
+
+}
+
+#pie{
+background-color: darkred;
+
+}
+
+article > img {
+    width: 100px;
+
+
+
+}
