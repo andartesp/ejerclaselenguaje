@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que el cuerpo y el html ocupen todo el alto del viewport */
+  }
+  
+  .contenedor {
+    position: relative; /* Establece una posición relativa */
+    height: 50vh; /* Utiliza el 100% del alto del viewport */
+    border:solid 2px red;
+    width: 50vh;
+    border: solid 2px red;
+    margin-left: 25vw;
+    margin-top: 25vh;
+  }
+  
+  .centrado {
+    position: absolute; /* Establece una posición absoluta */
+    top: 50%; /* Sitúa el elemento en el 50% de la altura del contenedor */
+    left: 50%; /* Sitúa el elemento en el 50% del ancho del contenedor */
+    transform: translate(-50%, -50%); /* Mueve el elemento hacia arriba y hacia la izquierda en un 50% de su propio tamaño */
+    text-align: center; /* Alineación del texto */
+    border: solid 2px blue;
+  }
+  
+  .fa-star {
+    font-size: 48px; /* Tamaño del icono */
+    color: gold; /* Color del icono (cambia según tus preferencias) */
+  }
