@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
    <meta charset="utf-8">
    <title>JavaScript</title>
+   <script>
+      alert('hola')
+
+   </script>
+   <script src="script.js"></script>
+
 </head>
+
 <body>
-   <p onclick="alert('¡Hola Mundo!')">Clic aquí</p>
+
+
+
+<h1>Clic aquí</h1>
+<h2>Prueba js externo</h2>
+
+<!-- Usando un elemento de imagen para el evento onload 
+<img src="imagen.jpg" onload="alert('La imagen se ha cargado correctamente')" onerror="alert('Error al cargar la imagen')">-->
+
+   <script>
+
+
+      // Este es el código JavaScript integrado
+      // El siguiente código muestra una alerta cuando se hace clic en el párrafo
+      let parrafo = document.querySelector("h1");
+      parrafo.addEventListener("click", function () {
+         alert("¡Hola Mundo!");
+      });
+
+   </script>
 </body>
+
 </html>
